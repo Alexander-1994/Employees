@@ -23,7 +23,7 @@ class EmployeesListItem extends Component {
     }
 
     render() {
-        const {name, salary} = this.props,                                                        /* для удобства работы, сразу дестректурируем нужные свойства из объектов props, state */
+        const {name, salary, onDelete} = this.props,                                                        /* для удобства работы, сразу дестректурируем нужные свойства из объектов props, state */
               {increase, rise} = this.state;
 
         let classNames = 'list-group-item d-flex justify-content-between';                        /* если у сотрудника в базе данных свойство increase в позиции true -> сотрудник "подсвечивается" ораньжевым */
@@ -44,7 +44,8 @@ class EmployeesListItem extends Component {
                     </button>
 
                     <button type="button"
-                            className="btn-trash btn-sm ">
+                        className="btn-trash btn-sm "
+                        onClick={onDelete}>
                         <i className="fas fa-trash"></i>
                     </button>
                     <i className="fas fa-star"></i>
