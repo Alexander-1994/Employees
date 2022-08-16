@@ -18,11 +18,21 @@ class EmployeesAddForm extends Component {
 
     onSubmit = (e) => {
         e.preventDefault();
-        this.props.onAdd(this.state.name, this.state.salary);
-        this.setState({
-            name: '',
-            salary: ''
-        })
+        const {name, salary} = this.state;
+        
+        if (name.length >= 2 && +salary >= 99) {
+            this.props.onAdd(name, salary);
+            this.setState({
+                name: '',
+                salary: ''
+            })
+        } else {
+            alert(`
+                Ввод некорректный! Примечания: 
+                1. Имя сотрудника должно быть минимум из 2 букв
+                2. Минимальная з/п сотрудника - 100$
+            `)
+        }
     }
 
     render() {
