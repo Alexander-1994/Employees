@@ -5,7 +5,7 @@ import AppFilter from '../app-filter/app-filter';
 import EmployeesList from '../employees-list/employees-list';
 import EmployeesAddForm from '../employees-add-form/employees-add-form';
 
-import './app.css';
+import './app.sass';
 
 class App extends Component {
     constructor(props) {
@@ -14,7 +14,7 @@ class App extends Component {
             data: [                                                    
                 {name: 'John S.', salary: 800, increase: false, rise: false, id: 1},
                 {name: 'Alex K.', salary: 7000, increase: false, rise: false, id: 2},
-                {name: 'Ann C.', salary: 2000, increase: false, rise: false, id: 3},
+                {name: 'Ann C.', salary: 800, increase: false, rise: false, id: 3},
                 {name: 'Oleg A.', salary: 3000, increase: false, rise: false, id: 4},
                 {name: 'Dvitriy S.', salary: 1700, increase: false, rise: false, id: 5},
                 {name: 'Kianu R.', salary: 20000, increase: false, rise: false, id: 6}
