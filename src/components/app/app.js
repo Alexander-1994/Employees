@@ -7,7 +7,23 @@ import EmployeesAddForm from '../employees-add-form/employees-add-form';
 
 import './app.sass';
 
-class App extends Component {
+const App = () => {
+    return (
+        <div className='app'>
+            <AppInfo />
+
+            <div className="search-panel">
+                <SearchPanel />
+                <AppFilter />
+            </div>
+                                                                        
+            <EmployeesList />                               
+            <EmployeesAddForm />
+        </div>
+    )
+}
+
+/* class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -107,6 +123,6 @@ class App extends Component {
             </div>
         )
     }
-}
+} */
 
 export default App;

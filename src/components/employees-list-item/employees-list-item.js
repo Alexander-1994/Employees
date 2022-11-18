@@ -1,8 +1,6 @@
 import './employees-list-item.sass';
 
-const EmployeesListItem = (props) => {                                     
-    const {name, salary, increase, rise, onDelete, onToggleProp} = props;   
-
+const EmployeesListItem = ({name, salary, increase, rise, onDelete, onToggleValuePerson}) => {                                     
     let classNames = 'list-group-item d-flex justify-content-between';                       
     
     if (increase) classNames += ' increase';
@@ -12,13 +10,13 @@ const EmployeesListItem = (props) => {
         <li className={classNames}>
             <span className="list-group-item-label"
                 data-toggle="rise"
-                onClick={onToggleProp}>{name}</span>
+                onClick={onToggleValuePerson}>{name}</span>
             <input type="text" className="list-group-item-input" defaultValue={salary + "$"}/>
             <div className='d-flex justify-content-center align-items-center'>
                 <button type="button"
                     className="btn-cookie btn-sm "
                     data-toggle="increase"
-                    onClick={onToggleProp}>
+                    onClick={onToggleValuePerson}>
                     <i className="fas fa-cookie"></i>
                 </button>
 

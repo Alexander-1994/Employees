@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "name": "Александр",
+      "salary": 1500,
+      "increase": false,
+      "rise": false,
+      "id": "99ded708-4c5b-4d26-b10f-7bc40b393bbc"
+    },
+    {
+      "name": "Сергей",
+      "salary": 650,
+      "increase": false,
+      "rise": false,
+      "id": "da6745e8-b13f-4ee9-ba82-62e27c68a8e4"
+    },
+    {
+      "name": "Алиса",
+      "salary": 2000,
+      "increase": false,
+      "rise": false,
+      "id": "ed5b31b0-fafc-4bc9-bb81-f8ef42da9ff2"
+    },
+    {
+      "name": "Анна",
+      "salary": 650,
+      "increase": false,
+      "rise": false,
+      "id": "f2331e27-8faa-4cba-b9f9-d0815d9acbd7"
+    },
+    {
+      "name": "Елена",
+      "salary": 800,
+      "increase": false,
+      "rise": false,
+      "id": "7dfa9f10-f502-44bb-a78a-d07351c15c69"
+    },
+    {
+      "name": "Олег",
+      "salary": 650,
+      "increase": false,
+      "rise": false,
+      "id": "190a16c8-50b1-4ef2-aa5b-21a52ed8cc6f"
+    },
+    {
+      "name": "Екатерина",
+      "salary": 900,
+      "increase": false,
+      "rise": false,
+      "id": "c930eda4-037e-4147-8ed3-d953f280d946"
+    }
+  ]
+}

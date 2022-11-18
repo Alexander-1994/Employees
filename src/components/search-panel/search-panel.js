@@ -1,32 +1,19 @@
-import { Component } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { onSearchEmployee } from '../../services/actions';
 import './search-panel.sass';
 
-class SearchPanel extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            term: ''
-        }
-    }
+const SearchPanel = () => {
+    const dispatch = useDispatch();
+    const {enter} = useSelector(state => state.filtration);
 
-    onSearch = (e) => {
-        const enter = e.target.value;
-        this.setState({
-            term: enter
-        });
-        this.props.onUpdateSearch(enter)
-    }
-
-    render() {
-        return (
-            <input 
-                type="text" 
-                className='form-control search-input' 
-                placeholder='Найти сотрудника'
-                value={this.state.term}
-                onChange={this.onSearch} />
-        )
-    }
+    return (
+        <input 
+            type="text" 
+            className='form-control search-input' 
+            placeholder='Найти сотрудника'
+            value={enter}
+            onChange={event => dispatch(onSearchEmployee(event.target.value))} />
+    )
 }
 
 export default SearchPanel;
